@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Elements</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f2f1; /* Light teal background */
+            color: #01579b; /* Deep blue */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transition: font-size 0.3s ease;
+        }
+        .cloud {
+            width: 12%; /* Responsive width */
+            min-width: 200px;
+            height: auto;
+            aspect-ratio: 5 / 3;
+            background: #fff;
+            border-radius: 50%;
+            top: 10%; /* Responsive positioning */
+            font-size: 1vw; /* Responsive font size */
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .cloud::before {
+            width: 75%;
+            height: 100%;
+            top: -50%;
+            left: 5%;
+        }
+        .cloud::after {
+            width: 75%;
+            height: 100%;
+            top: -30%;
+            right: 5%;
+        }
+        .raindrop {
+            width: 2%; /* Responsive width */
+            min-width: 30px;
+            height: 80px;
+            background: #2196f3;
+            border-radius: 50% 50% 50% 50%/50% 50% 60% 60%;
+            transform: rotate(45deg);
+            top: 30%; /* Responsive positioning */
+            left: 50%; /* Center horizontally */
+            margin-left: -1%; /* Center element relative to its width */
+            font-size: 1vw; /* Responsive font size */
+        }
+        .wind {
+            width: 15%; /* Responsive width */
+            min-width: 150px;
+            height: 20px;
+            background: linear-gradient(to right, #81d4fa, #0288d1);
+            border-radius: 10px;
+            top: 50%; /* Responsive positioning */
+            left: 50%; /* Center horizontally */
+            margin-left: -7.5%; /* Center element relative to its width */
+            font-size: 1vw; /* Responsive font size */
+        }
+        /* Responsive adjustments for larger screens */
+        @media (min-width: 768px) {
+            .cloud, .raindrop, .wind {
+                font-size: 0.8vw; /* Slightly smaller font size for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://xiaoyou03.github.io/Thermal-Respiration/" class="cloud"></a>
+    <a href="https://xiaoyou03.github.io/Thermal-Precipitation/" class="raindrop"></a>
+    <a href="https://xiaoyou03.github.io/Thermal-Blossom/" class="wind"></a>
+</body>
+</html>
+
